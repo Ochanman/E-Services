@@ -1,0 +1,402 @@
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(../font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Valera Round";
+  src: url(../font/VarelaRound-Regular.ttf);
+}
+*, body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Valera Round";
+  overflow-x: clip;
+  
+}
+.flex {
+  display: flex;
+}
+.logo {
+  width: 20%;
+  
+  
+  top: 40px;
+  left: 100px;
+  
+}
+.logoES {
+  width: 100%;
+  
+  
+}
+header {
+  
+  position: fixed;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  padding-top: 20px 80%;
+  content: '';
+  top: 0;
+  left: 0;
+  clip-path: polygon(0% 0%,100% 0%,100% 55%,0% 100%);
+  z-index: 2; 
+  border-radius: 0 0 0 250px;
+  box-shadow: -200px 0 #A399E0;
+}
+/* header:before {
+  content: '';
+  top: 3px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  background: #fff;
+  clip-path: polygon(0% 50%, 100% 50%, 0% 100%);
+  z-index: 9;
+  
+} */
+.navigation {
+  width: 70%;
+  
+}
+.main-menu {
+  justify-content: end;
+  padding: 0;
+  
+  text-transform: uppercase;
+  
+}
+
+.main-menu .main-menu-element {
+  
+  padding: 0 1.5rem;
+}
+.main-menu .main-menu-element a {
+  color: rgba(57, 51, 97);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  
+}
+/* SEPARATION DES ELEMENTS DU MENU PAR UN BORDER SAUF LE DERNIER */
+.main-menu .main-menu-element:not(:nth-last-child(-n+2)) {
+  border-right: 1px solid #a399e0;
+  
+}
+.btn-grad {background-image: linear-gradient(to right, #A399E0 0%, #DA73C3 51%, #A399E0  100%)}
+.btn-grad {
+   margin-left: 100px;
+   
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   min-width: 150px;
+   height: 30px;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   
+ }
+#video video {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+#video {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1Video,
+.h2Video {
+  font-family: "Valera Round";
+  
+  color: rgb(163, 153, 224);
+  font-size: 2em;
+  text-align: center;
+}
+.h1Video {
+  font-size: 3em;
+  font-weight: bolder;
+}
+#container {
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
+}
+.article p {
+  width: 20%;
+  font-size: 1.2em;
+  margin: auto 5%;
+}
+.article h2 {
+  text-align: center;
+}
+.article {
+  justify-content: center;
+  margin: 40px;
+}
+.titleImg {
+  width: 40%;
+  margin: 0 5%;
+  
+}
+.titleImg h2 {
+  margin-bottom: 40px;
+  font-weight: bolder;
+}
+
+.imgFix {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#content {
+  width: 100%;
+  height: 50vh;
+  margin: 40px;
+  
+}
+
+.bannerR {
+  background-color: rgba(163, 153, 224, 0.4);
+  width: 100%;
+  height: 25vh;
+  margin-top: 40px;
+  left: 200%;
+  transform: translateY(-20%);
+  position: absolute;
+  transition: 1.2s ease;
+  
+}
+.bannerL {
+  background-color: rgba(163, 153, 224, 0.4);
+  width: 100%;
+  height: 25vh;
+  margin-top: 40px;
+  right: 200%;
+  transform: translateY(80%);
+  position: absolute;
+  transition: 1.2s ease;
+  
+}
+.contentBtnL,
+.contentBtnR {
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  align-items: flex-end;
+  perspective: 1000px;
+}
+.contentBoxR {
+  align-items: flex-start;
+}
+
+.btnTL,
+.btnTR {
+  z-index: 1;
+}
+.btnTL {
+  top: 0;
+}
+.btnBL {
+  bottom: 0;
+}
+.btnTR {
+  top: 0;
+}
+.btnBR {
+  bottom: 0;
+}
+.btn {
+  background-image: url(../img/iphoneR.png);
+  background-size: cover;
+  width: 447px;
+  height: 220px;
+  color: whitesmoke;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  border-radius: 40px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 8px;
+  transition: 0.7s;
+  padding: 90px;
+}
+
+.btnTL,
+.btnBL {
+  right: 0;
+  border-left: 4px solid rgba(0, 0, 0, 0.2);
+  transform: rotateY(35deg) rotateX(15deg);
+}
+
+.btnTL:hover,
+.btnBL:hover {
+  color: whitesmoke;
+  transform: translateY(30px) rotateY(35deg) rotateX(15deg) scale(1.2);
+}
+
+.btnTR,
+.btnBR {
+  left: 0;
+  border-right: 4px solid rgba(0, 0, 0, 0.2);
+  transform: rotateY(-35deg) rotateX(15deg);
+}
+
+.btnTR:hover,
+.btnBR:hover {
+  color: whitesmoke;
+  transform: translateY(30px) rotateY(-35deg) rotateX(15deg) scale(1.2);
+}
+#carouselExampleDark {
+  position: absolute;
+  width: 60%;
+  left: 8%;
+  top: 8%;
+  z-index: -1;
+  object-fit: cover;
+  
+}
+/* #carouselExampleDark::before {
+background-image: url(../img/iphoneScreen.png);
+  background-size: cover;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
+.screen {
+position: relative;
+width: 100%;
+z-index: 1;
+object-fit: cover;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+
+.follow {
+  width: 100%;
+  height: 30vh;
+  justify-content: end;
+  background-size: cover;
+  flex-direction: column;
+  
+  text-align: center;
+}
+.follow h2 {
+  font-weight: bolder;
+  margin: 0;
+}
+.follow p {
+  margin: 0 auto;
+  font-size: 1.6em;
+  width: 80%;
+  text-align: center;
+}
+.btnFollow {
+  width: 300px;
+  margin: 20px auto;
+}
+
+#footer {
+
+}
+.phones {
+  width: 100%;
+  object-fit: cover;
+}
+.imgFooter {
+  width: 100%;
+  
+  
+}
+.contentFooter {
+  justify-content: center;
+  background-color: rgba(163, 153, 224, 0.4);
+  width: 100%;
+  padding: 20px;
+}
+
+.contentContact {
+  flex-direction: column;
+  border-left: 1px solid black;
+  padding-left: 3%;
+  justify-content: center;
+}
+
+.logoFooter {
+  justify-content: end;
+  margin-right: 40px;
+  width: 20%
+}
+.logoFooter img {
+  width: 100%;
+  object-fit: cover;
+}
+.footerMenu {
+  justify-content: center;
+  margin-top: 2%;
+  
+}
+.footerMenu li:not(:last-child) {
+  
+  border-right: 1px solid black;
+}
+.footerMenu li {
+  
+}
+.footerMenu li a {
+  color: black;
+  font-weight: lighter;
+  padding: 0 0.5rem;
+}
+.border h3 {
+  font-size: 1rem;
+}
+.border span,
+a {
+  font-size: 0.8rem;
+  color: black;
+}
+.border span {
+  margin-top: 3%;
+}
+
+
+
+
+
