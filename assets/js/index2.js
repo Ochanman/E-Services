@@ -6,7 +6,6 @@ const btnBL = document.querySelector (".btnBL");
 const btnTR = document.querySelector (".btnTR");
 const btnBR = document.querySelector (".btnBR");
 
-
 window.addEventListener("scroll", (e) => {
   
 
@@ -20,6 +19,17 @@ window.addEventListener("scroll", (e) => {
 
 })
 
+let btnWitdh = window.innerWidth/4;
+  btnTL.style.width = btnWitdh + "px";
+  btnTL.style.height = btnWitdh/2 + "px";
+  btnBL.style.width = btnWitdh + "px";
+  btnBL.style.height = btnWitdh/2 + "px";
+  btnTR.style.width = btnWitdh + "px";
+  btnTR.style.height = btnWitdh/2 + "px";
+  btnBR.style.width = btnWitdh + "px";
+  btnBR.style.height = btnWitdh/2 + "px";
+
+
 window.addEventListener("resize", (e) => {
 
   let btnWitdh = window.innerWidth/4;
@@ -31,9 +41,8 @@ window.addEventListener("resize", (e) => {
   btnTR.style.height = btnWitdh/2 + "px";
   btnBR.style.width = btnWitdh + "px";
   btnBR.style.height = btnWitdh/2 + "px";
-  btn.style.width = btnWitdh + "px";
-  btn.style.height = btnWitdh/2 + "px";
+  
 })
 
 
-
+console.log(window.screen.Width);

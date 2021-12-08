@@ -6,28 +6,22 @@
   font-family: "Valera Round";
   src: url(../font/VarelaRound-Regular.ttf);
 }
-*, body {
+*,
+body {
   margin: 0;
   padding: 0;
-  
+
   font-family: "Valera Round";
   overflow-x: clip;
-  
 }
 .flex {
   display: flex;
 }
 .logo {
   width: 30%;
- 
-  
-  
-  
 }
 .logoES {
   width: 100%;
-  
-  
 }
 header {
   padding: 0 5%;
@@ -38,13 +32,13 @@ header {
   width: 100%;
   background-color: white;
   padding-top: 20px 80%;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
-  clip-path: polygon(0% 0%,100% 0%,100% 66%,0% 100%);
-  z-index: 2; 
+  clip-path: polygon(0% 0%, 100% 0%, 100% 66%, 0% 100%);
+  z-index: 2;
   border-radius: 0 0 0 250px;
-  box-shadow: -200px 0 #A399E0;
+  box-shadow: -200px 0 #a399e0;
 }
 /* header:before {
   content: '';
@@ -65,13 +59,11 @@ header {
 .main-menu {
   justify-content: end;
   padding: 0;
-  
+
   text-transform: uppercase;
-  
 }
 
 .main-menu .main-menu-element {
-  
   padding: 0 1.5rem;
 }
 .main-menu .main-menu-element a {
@@ -80,34 +72,42 @@ header {
   font-size: 1vw;
   font-weight: 600;
   letter-spacing: 1px;
-  
+}
+
+.main-menu .main-menu-element a:hover {
+  color: rgb(163, 153, 224);
 }
 /* SEPARATION DES ELEMENTS DU MENU PAR UN BORDER SAUF LE DERNIER */
-.main-menu .main-menu-element:not(:nth-last-child(-n+2)) {
+.main-menu .main-menu-element:not(:nth-last-child(-n + 2)) {
   border-right: 1px solid #a399e0;
-  
 }
-.btn-grad {background-image: linear-gradient(to right, #A399E0 0%, #DA73C3 51%, #A399E0  100%)}
 .btn-grad {
-   margin-left: 100px;
-   font-size: 1vw;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
-   display: block;
-   min-width: 120px;
-   height: 30px;
- }
+  background-image: linear-gradient(
+    to right,
+    #a399e0 0%,
+    #da73c3 51%,
+    #a399e0 100%
+  );
+}
+.btn-grad {
+  margin-left: 100px;
+  font-size: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  min-width: 120px;
+  height: 30px;
+}
 
- .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   
- }
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+}
 #video video {
   width: 100%;
   height: 70vh;
@@ -136,7 +136,7 @@ main {
 .h1Video,
 .h2Video {
   font-family: "Valera Round";
-  
+
   color: rgb(163, 153, 224);
   font-size: 2em;
   text-align: center;
@@ -165,7 +165,6 @@ main {
 .titleImg {
   width: 40%;
   margin: 0 5%;
-  
 }
 .titleImg h2 {
   margin-bottom: 40px;
@@ -181,7 +180,6 @@ main {
   width: 100%;
   height: 50vh;
   margin: 40px;
-  
 }
 
 .bannerR {
@@ -193,7 +191,6 @@ main {
   transform: translateY(-20%);
   position: absolute;
   transition: 1.2s ease;
-  
 }
 .bannerL {
   background-color: rgba(163, 153, 224, 0.4);
@@ -204,7 +201,6 @@ main {
   transform: translateY(80%);
   position: absolute;
   transition: 1.2s ease;
-  
 }
 .contentBtnL,
 .contentBtnR {
@@ -213,9 +209,7 @@ main {
   position: relative;
   align-items: flex-end;
   perspective: 1000px;
-  
 }
-
 
 .btnTL,
 .btnTR {
@@ -237,18 +231,17 @@ main {
   background-image: url(../img/iphoneR.png);
   background-size: cover;
 
-
-  min-width: 170px;
-  min-height: 84px;
+  min-width: 230px;
+  min-height: 115px;
   color: whitesmoke;
   position: absolute;
   transform: translate(-50%, -50%);
-  font-size: 1vw;
+  font-size: 1.8vw;
   font-weight: bold;
   justify-content: center;
   text-align: center;
   border-radius: 12%;
-  
+
   border-bottom: 4px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 8px;
   transition: 0.7s;
@@ -284,10 +277,9 @@ main {
   position: absolute;
   width: 80%;
   left: 8%;
-  top: 8%;
+  top: 10%;
   z-index: -1;
   object-fit: cover;
-  
 }
 /* #carouselExampleDark::before {
 background-image: url(../img/iphoneScreen.png);
@@ -299,15 +291,15 @@ background-image: url(../img/iphoneScreen.png);
   width: 100%;
 } */
 .screen {
-position: relative;
-width: 80%;
-z-index: 1;
+  position: relative;
+  width: 80%;
+  z-index: 1;
 
-margin-left: auto;
-margin-right: auto;
-text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-.screen img{
+.screen img {
   width: 100%;
   object-fit: cover;
 }
@@ -318,16 +310,17 @@ text-align: center;
   justify-content: end;
   background-size: cover;
   flex-direction: column;
-  
+
   text-align: center;
 }
 .follow h2 {
+  font-size: 1.6vw;
   font-weight: bolder;
   margin: 0;
 }
 .follow p {
   margin: 0 auto;
-  font-size: 1.6em;
+  font-size: 1.6vw;
   width: 80%;
   text-align: center;
 }
@@ -337,7 +330,6 @@ text-align: center;
 }
 
 #footer {
-
 }
 .phones {
   width: 100%;
@@ -345,8 +337,6 @@ text-align: center;
 }
 .imgFooter {
   width: 100%;
-  
-  
 }
 .contentFooter {
   justify-content: center;
@@ -362,9 +352,8 @@ text-align: center;
   border-left: 1px solid black;
   padding-left: 3%;
   justify-content: center;
-  
+
   margin-left: 3%;
-  
 }
 
 /* .logoFooter {
@@ -380,14 +369,11 @@ text-align: center;
 .footerMenu {
   justify-content: center;
   margin-top: 2%;
-  
 }
 .footerMenu li:not(:last-child) {
-  
   border-right: 1px solid black;
 }
 .footerMenu li {
-  
 }
 .footerMenu li a {
   color: black;
@@ -406,7 +392,49 @@ a {
   margin-top: 1%;
 }
 
+/* -----------------TUTOVIDEO--------------------- */
 
+.tutotop {
+  text-align: center;
+  margin-top: 20vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "a a a"
+    "b b b"
+    "c . .";
+}
+.tutotop h2 {
+  grid-area: a;
+  margin: 20px;
+}
+.tutotop p {
+  grid-area: b;
+  font-weight: bold;
+}
+.tutotop h3 {
+  grid-area: c;
+}
+.tutovideo {
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.contentbox {
+  
+  width: 20%;
+  
+  text-align: center;
+  margin: 15px;
+}
 
-
-
+.screen {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.tutotop h2, h3 {
+  color: rgba(163, 153, 224)
+}
