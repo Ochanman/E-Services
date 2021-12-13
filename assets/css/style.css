@@ -347,10 +347,10 @@ main {
   
 }
 .logoFooter {
- width: 150px;
+ width: 15vw;
  
 }
-.logoFooter img {
+.imgLogoFooter {
   width: 100%;
   object-fit: cover;
  }
